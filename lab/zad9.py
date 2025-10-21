@@ -11,7 +11,7 @@ def d(a: tuple, b: tuple) -> float:
 
 def test(n):
     points = [tuple(random.uniform(-1, 1) for _ in range(n)) for _ in range(k)]
-    dsits = [d(a, b) for a in points for b in points if a != b]
+    dsits = [d(a[1], b) for i, a in enumerate(points) for j, b in enumerate(points) if i < j]
     max_d = max(dsits)
     min_d = min(dsits)
 
