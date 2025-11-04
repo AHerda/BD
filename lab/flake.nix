@@ -21,7 +21,10 @@
             p.numpy
             p.seaborn
             p.wordcloud
+            p.mpmath
+            p.pandas
           ]))
+          gcc
         ];
       };
     };

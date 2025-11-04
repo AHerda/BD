@@ -29,7 +29,7 @@ grouped_pairs.sort(key = lambda pair : pair [1], reverse = True)
 print(f"No. of words {len(grouped_pairs)}")
 print(f"Most  popular words: {grouped_pairs[:25]}")
 
-wc = WordCloud(width=512, height=512, background_color='white', max_words=1000).generate_from_frequencies(dict(grouped_pairs))
+wc = WordCloud(width=1024, height=1024, background_color='white', max_words=1000).generate_from_frequencies(dict(grouped_pairs))
 plt.figure(figsize=(10, 10))
 plt.imshow(wc, interpolation='bilinear')
 plt.axis('off')
