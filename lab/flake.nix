@@ -20,6 +20,7 @@
             p.matplotlib
             p.numpy
             p.seaborn
+            p.wordcloud
           ]))
         ];
       };
